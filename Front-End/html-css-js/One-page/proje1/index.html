@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Page website #1</title>
+
+    <style>
+        .text-center {
+            text-align: center;
+        }
+        body {
+            background-color: rgba(128, 128, 128, 0.651);
+        }
+        .main {
+            margin: 0px 10%;
+        }
+        header h1{
+            font-size: 40px;
+            color: white;
+            text-shadow: 2px 2px #000000;
+        }
+        nav {
+            border: 1px solid red;
+        }
+
+        .navbar {
+            background-color: rgb(255, 143, 246);
+            padding: 10px 24px;
+        }
+
+        .nav-list {
+            display: flex;
+            justify-content: space-around;
+            list-style-type: none;
+
+        }
+
+        .nav-list li {
+            font-family: Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 1.1rem;
+            letter-spacing: 0.6px;
+
+        }
+
+        .nav-list li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .nav-list li a:hover {
+            color: white;
+            transition-duration: 0.2s;
+        }
+
+        .nav-list li input {
+            padding: 2px;
+        }
+
+        .nav-list li button {
+            width: 50px;
+            padding: 3px;
+            border: 1px solid black;
+            color: white;
+            background-color: black;
+            border: none;
+        }
+
+        .nav-list li button:hover {
+            padding: 3px;
+            border: 1px solid black;
+            color: black;
+            background-color: white;
+            transition-duration: 0.4s;
+        }
+
+        .subtitle {
+            font-size: 30px;
+        }
+
+        .container {
+            display: flex;
+        }
+        .container section {
+            flex: 3;
+            background-color: white;
+            margin: 10px 5px 10px 0px;
+            padding: 10px;
+        }
+
+
+
+        .container aside {
+            flex :1 ;
+            background-color: rgb(255, 143, 246);
+            margin: 10px 0px 10px 5px;
+        }
+        .aside-list li {
+            padding-bottom: 20px;
+        }
+        .aside-list li a{
+            color: blue;
+        }
+
+        footer {
+            background-color: white;
+            padding: 8px 10px;
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+    <div class="main">
+        <header>
+            <h1 class="text-center">Header</h1>
+        </header>
+
+        <nav>
+            <div class="navbar">
+                <ul class="nav-list">
+                    <li>
+                        <a href="#">HOME</a>
+                    </li>
+                    <li>
+                        <a href="#">OUR TEAM</a>
+                    </li>
+                    <li>
+                        <a href="#">PROJECTS</a>
+                    </li>
+                    <li>
+                        <a href="#">CONTACT</a>
+                    </li>
+                    <li>
+                        <input type="search" placeholder="Search query">
+                        <button>Go!</button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container">
+            <section>
+                <article>
+                    <h1 class="text-center subtitle">Article Heading</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sed doloribus dolores neque
+                        ullam ducimus inventore hic nisi, fugit quam, ut assumenda itaque, vel voluptatibus ea pariatur
+                        tempore accusamus eaque eos eius! Quo voluptates fugit error perferendis, exercitationem
+                        necessitatibus aliquid possimus tempora! Facere eos optio quis similique? Quia, quod sit?
+                    </p>
+                    <h2>subsection</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe excepturi sit veniam perferendis
+                        sunt nostrum repudiandae consequuntur doloremque quibusdam iusto!
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium repellendus laboriosam,
+                        voluptatum architecto excepturi tempora.
+                    </p>
+                    <h2>Another subsection</h2>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium sed deleniti neque dolores
+                        inventore molestias aspernatur natus itaque blanditiis dolore quas accusamus rerum est, nisi
+                        quaerat saepe officiis iusto quasi?
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, nesciunt. Ab qui ipsum
+                        voluptatem id cum harum porro perspiciatis repellat, sequi fugiat alias consectetur iste?
+                    </p>
+                </article>
+
+            </section>
+
+            <aside>
+                <h1 class="text-center subtitle">Related</h1>
+                <ul class="aside-list">
+                    <li>
+                        <a href="#">Oh i do like to be beside the seaside</a>
+                    </li>
+                    <li>
+                        <a href="#">Oh i do like to be beside the sea</a>
+                    </li>
+                    <li>
+                        <a href="#">Lorem ipsum dolor sit.</a>
+                    </li>
+                    <li>
+                        <a href="#">Lorem ipsum dolor sit amet consectetur.</a>
+                    </li>
+                    <li>
+                        <a href="#">Lorem, ipsum dolor.</a>
+                    </li>
+                </ul>
+            </aside>
+        </div>
+
+        <footer>
+            <p>Copyright 2021 by Yasin T. All Rights reserved.</p>
+        </footer>
+    </div>
+
+
+</body>
+
+</html>
