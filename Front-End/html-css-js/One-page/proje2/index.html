@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Page website #3</title>
+    <style>
+        body {
+            background-image: url("bg.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            color: white;
+        }
+
+        .headertitle {
+            padding: 8px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .headertitle {
+            font-family: Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 36px;
+            margin: 0px 0px 0px 64px;
+            color: rgb(32, 30, 44);
+        }
+
+        .headertitle:hover {
+            color: rgb(88, 76, 76)
+        }
+
+        .nav-list {
+            display: flex;
+            list-style-type: none;
+            justify-content: center;
+        }
+
+        .nav-list-item a {
+            text-decoration: none;
+            color: rgb(59, 0, 20);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 24px;
+            font-size: 24px;
+        }
+
+        .nav-list-item a:hover {
+            color: rgb(153, 4, 4)
+        }
+
+
+        a {
+            text-decoration: none;
+        }
+        hr {
+            border: 0;
+            border-top: 1px solid black;
+        }
+
+        .container {
+            width: 33%;
+            margin: 25vh auto;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+        }
+        .container p{
+            font-size: 1.25em;
+        }
+        .title{
+            font-size: 48px;
+        }
+        button {
+            border-radius: 20px;
+            color: white;
+            border: 1px solid  rgb(255, 0, 106);
+            background-color: rgb(255, 0, 106);
+            padding: 12px 30px;
+            margin-top: 20px;
+
+        }
+        button:hover{
+            color:  rgb(255, 0, 106);
+            background-color: white;
+        }
+        button:hover, a:hover, h1:hover{
+            transition-duration: 0.4s;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#">
+                <h1 class="headertitle">Pointer<span style="color: rgb(161, 51, 51)">.</span></h1>
+            </a>
+            <ul class="nav-list">
+
+                <li class="nav-list-item"><a href="">Home</a></li>
+                <li class="nav-list-item"><a href="">About Us</a></li>
+                <li class="nav-list-item"><a href="">Team</a></li>
+                <li class="nav-list-item"><a href="">Service</a></li>
+                <li class="nav-list-item"><a href="">Testimonials</a></li>
+                <li class="nav-list-item"><a href="">Blog</a></li>
+                <li class="nav-list-item"><a href="">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+
+    <section>
+        <div class="container">
+            <h2 class="title">We Are The Best Consulting Agency</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt a distinctio minus pariatur.</p>
+
+            <button class="main-btn">Get Started</button>
+        </div>
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Page Website #4</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #273343;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        hr {
+            border: 0.1px solid rgba(255, 255, 255, 0.295);
+        }
+        .vertical-line {
+            border: 0.2px solid rgba(0, 0, 0, 0.137);
+        }
+
+        .green-text{
+            color: #37c2a1;
+        }
+
+        .title-text-dark {
+            color: #49596d;
+        }
+
+        .top-bar {
+            display: flex;
+            justify-content: space-between;
+            margin: 2px 10%;
+        }
+
+        .fix-header {
+            background-color: #22AF8D
+                /*position:fixed;
+            overflow: hidden;
+            width: 100%;*/
+        }
+
+        .top-item {
+            margin: 10px;
+            text-align: center;
+        }
+
+        .top-item a h1 {
+            padding-top: 3px;
+            color: rgba(255, 255, 255, 0.932);
+            letter-spacing: -2px;
+        }
+
+        .item2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+
+        }
+
+        .item2 a i {
+            margin: 0px 10px;
+            color: rgba(58, 58, 58, 0.432);
+        }
+
+        .item2 input {
+            padding: 8px;
+            font-size: large;
+            border-radius: 5px;
+            border: 0px;
+            background-color: rgba(58, 58, 58, 0.432);
+            color: rgb(218, 218, 218)
+        }
+
+        .item2 input::placeholder {
+            color: #22AF8D
+        }
+
+        .item2 button {
+            padding: 12px 16px;
+            border-radius: 5px;
+            border: 0px;
+            margin-left: 2px;
+            background-color: rgba(58, 58, 58, 0.432);
+        }
+
+        /*******************/
+
+        .container {
+            margin: 40px 10.5%;
+        }
+
+        .nav-header {
+            background-color: #52647A;
+
+            border-radius: 5px 5px 0px 0px;
+        }
+
+        .navbar {
+
+            width: 50%;
+            margin: 0px auto;
+        }
+
+        .nav-list {
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav-list li {
+            margin: 30px;
+        }
+
+        .nav-list li a {
+            color: rgba(255, 255, 255, 0.856);
+            letter-spacing: -1px;
+        }
+
+        .nav-list li a:hover {
+            color: #22AF8D;
+        }
+
+        /****/
+        .homeclass {
+
+            height: 500px;
+            background-image: url("home-bg.jpg");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position: center;
+        }
+
+        #home {
+            display: flex;
+            height: 500px;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            text-align: center;
+            background-color: #22af8eb6
+        }
+
+        .left-ok,
+        .right-ok {
+            padding: 10px;
+            font-size: 30px;
+        }
+
+        .main {
+            height: 400px;
+            font-size: 1.5em;
+            letter-spacing: -0.5px;
+        }
+
+        .main h1 {
+            padding-top: 150px;
+        }
+
+        .main button {
+            border-radius: 5px;
+            font-size: 1em;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: white;
+            color: #22AF8D;
+            border: 0;
+        }
+
+        .main button:hover {
+
+            background-color: #22AF8D;
+            color: white;
+            transition-duration: 0.3s;
+        }
+
+        .left-ok a:hover,
+        .right-ok a:hover {
+            color: #52647A;
+        }
+
+        /*****/
+
+        #about {
+            background-color: #38475A;
+            text-align: center;
+        }
+
+        .about-container {
+            width: 50%;
+            margin: 0px auto;
+            padding-top: 50px;
+        }
+
+        .about-container hr {
+            width: 15%;
+            margin: 40px auto;
+            margin-top: 20px;
+            border: 0.1px solid rgba(255, 255, 255, 0.295);
+        }
+
+        .about-items {
+            display: flex;
+            justify-content: center;
+        }
+
+        .about-item {
+            margin: 20px;
+        }
+
+        .about-img {
+            height: 200px;
+            width: 200px;
+            background-position: top;
+            background-size: cover;
+            border-radius: 200px;
+            background-color: #22AF8D;
+        }
+
+        .img1 {
+            background-image: url("face1.png");
+        }
+
+        .img2 {
+            background-image: url("face2.png");
+        }
+
+        .img3 {
+            background-image: url("face3.png");
+        }
+
+        .about-text {
+            color: #7b92ad;
+            padding: 10px;
+        }
+
+        /*****/
+
+        #services {
+            background-color: white;
+        }
+
+
+        
+        .service-container {
+            padding: 50px 10px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .service-item {
+            padding: 0px 20px;
+        }
+        .service-header {
+            display: flex;
+            padding: 10px;
+        }
+        .service-icon {
+            background-color: #22AF8D;
+            border-radius: 10px;
+            font-size: 20px;
+            width: 50px;
+            height: 50px;
+        }
+
+        .service-title {
+            padding:0 10px;
+        }
+        
+        .service-icon i {
+            padding: 14px;
+        }
+
+        .more-button {
+            background-color: #22AF8D;
+            color: white;
+            border-radius: 5px;
+            padding: 8px;
+            margin: 10px;
+            font-size: 1.1em;
+            font-weight: bold;
+            border: 2px solid #22AF8D;
+        }
+        .more-button:hover{
+            background-color: white;
+            color: #22AF8D;
+            cursor: pointer;
+            transition-duration: .3s;
+        }
+        
+        /******/
+        #contact {
+            background-color: #38475A;
+            border-radius: 0px 0px 5px 5px;
+        }
+
+        .contact-container{
+            display: flex;
+            justify-content: space-between;
+            padding: 50px 36px;
+        }
+
+        .contact-about {
+            flex: 2;
+        }
+        .contact-about-item{
+            display: flex;
+
+        }
+        .contact-text {
+            padding: 0px 20px;
+        }
+        .contact-img{
+            width: 200px;
+            height: 200px;
+            background-position: top;
+            background-size: 200px;
+            border-radius: 10px;
+        }
+        .contact-img1{
+            background-image: url("contact-img1.jpg");
+        }
+        .contact-img2{
+            background-image: url("contact-img2.jpg");
+        }
+        .contact-form{
+            flex: 1;
+        }
+        .contact-form-header{
+            display: flex;
+            width: 100%;
+
+        }
+        .contact-form-header-text{
+            margin-left: 10px;
+        }
+        input, textarea{
+            display: block;
+            border: 3px solid  #7389a5;
+            border-radius: 5px;
+            padding: 5px;
+            font-size: 20px;
+            margin: 30px 0px;
+        }
+        textarea{
+            resize: vertical;
+        }
+
+        #work{
+            width: 100%;
+            background-color: #22AF8D;
+        }
+        .work-container{
+            margin: 40px 10.5%;
+            margin-bottom: 0px;
+            padding: 40px 0px;
+            color: white;
+        }
+
+        th{
+            text-align: left;
+        }
+
+        td {
+            padding: 5px 60px;
+            padding-left: 0px;
+            color:rgba(255, 255, 255, 0.815);
+        }
+
+        .work-table tr th{
+            font-size: 20px;
+        }
+        footer {
+            background-color: #167e66;
+        }
+        .footer-container {
+            margin: 0px 10.5%;
+            padding: 40px;
+            padding-left: 0px;
+            color: rgba(255, 255, 255, 0.733);
+        }
+        .footer-container p {
+            padding: 10px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Top Nav bar-->
+    <header class="fix-header">
+        <div class="top-bar">
+            <div class="top-item">
+                <a href="#">
+                    <h1>YASİN TORUN</h1>
+                </a>
+            </div>
+
+            <div class="top-item item2">
+                <a href="#"> <i class="fab fa-facebook-square"></i> </a>
+                <a href="#"> <i class="fab fa-twitter-square"></i> </a>
+                <a href="#"> <i class="fab fa-linkedin"></i> </a>
+                <input type="search" placeholder="Search">
+                <button type="submit"><i class="fa fa-search" style="color:  rgb(76, 180, 154);"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- main website container-->
+    <div class="container">
+        <header class="nav-header">
+            <nav class="navbar">
+                <ul class="nav-list">
+                    <div class="vertical-line"></div>
+                    <li><a href="#home">HOME</a></li>
+                    <div class="vertical-line"></div>
+                    <li><a href="#about">ABOUT</a></li>
+                    <div class="vertical-line"></div>
+                    <li><a href="#services">SERVICES</a></li>
+                    <div class="vertical-line"></div>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <div class="vertical-line"></div>
+                    <li><a href="#work">WORK</a></li>
+                    <div class="vertical-line"></div>
+                </ul>
+            </nav>
+        </header>
+        <div class="homeclass">
+            <div id="home">
+                <div class="left-ok">
+                    <a href="#"><i class="fas fa-chevron-circle-left"></i></a>
+                </div>
+
+                <div class="main">
+                    <h1>Proje Four</h1>
+                    <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <button><strong>LOREM IPSUM</strong></button>
+                </div>
+
+                <div class="right-ok">
+                    <a href="#"><i class="fas fa-chevron-circle-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div id="about">
+            <div class="about-container">
+                <h2 style="color: #22AF8D;">BİZ KİMİZ?</h1>
+                    <p class="about-text">Web tasarım öğreniyorum. Yapıyoruz Bir şeyler.</p>
+                    <hr>
+                    <div class="about-items">
+                        <div class="about-item">
+                            <div class="about-img img1">
+
+                            </div>
+                            <h3 style="color: #37c2a1;">Scarlett Johansson</h3>
+                            <p class="about-text">Gizli Ajan</p>
+                        </div>
+
+                        <div class="about-item">
+                            <div class="about-img img2">
+
+                            </div>
+                            <h3 style="color: #37c2a1;">Chris Evans</h3>
+                            <p class="about-text">Kaptan Amerika</p>
+                        </div>
+
+                        <div class="about-item">
+                            <div class="about-img img3">
+
+                            </div>
+                            <h3 style="color: #37c2a1;">Robert Downey</h3>
+                            <p class="about-text">Iron Man</p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+        <div id="services">
+            <div class="service-container">
+                <div class="service-item">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-wrench"></i>
+                        </div>
+                        <div class="service-title">
+                            <h2 class="title-text-dark">Servis #1</h2>
+                            <p class="green-text">Lorem ipsum dolor sit amet.</p>
+                        </div>
+
+                    </div>
+                    <div class="service-text">
+                        <p class="about-text">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod corrupti quisquam nobis repudiandae exercitationem nemo dolores laborum voluptas pariatur tempora!
+                        </p>
+                    </div>
+                    <div>
+                        <button class="more-button">More <span><i class="fas fa-arrow-right"></i></span></button>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-wrench"></i>
+                        </div>
+                        <div class="service-title">
+                            <h2 class="title-text-dark">Servis #2</h2>
+                            <p class="green-text">Lorem ipsum dolor sit amet.</p>
+                        </div>
+
+                    </div>
+                    <div class="service-text">
+                        <p class="about-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente nam aliquam dicta itaque autem facilis molestiae nulla vitae mollitia ducimus?
+                        </p>
+                    </div>
+                    <div>
+                        <button class="more-button">More <span><i class="fas fa-arrow-right"></i></span></button>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-wrench"></i>
+                        </div>
+                        <div class="service-title">
+                            <h2 class="title-text-dark">Servis #3</h2>
+                            <p class="green-text">Lorem ipsum dolor sit amet.</p>
+                        </div>
+
+                    </div>
+                    <div class="service-text">
+                        <p class="about-text">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit unde omnis fugiat qui et similique voluptatibus culpa quas assumenda sit!
+                        </p>
+                    </div>
+                    <div>
+                        <button class="more-button">More <span><i class="fas fa-arrow-right"></i></span></button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="contact">
+            <div class="contact-container">
+                <div class="contact-about">
+                    <div class="contact-about-item">
+                        <div class="contact-img contact-img1"></div>
+                        <div class="contact-text">
+                            <h3 class="about-text" style="color: #22AF8D;">Lorem, ipsum dolor.</h3>
+                            <p class="about-text"  style="color: #22AF8D;">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            <p class="about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quibusdam culpa perspiciatis fuga quos natus quisquam dolore et praesentium voluptate?
+                            </p>
+                            <button class="more-button"  style="margin-top: 22px;">More <span><i class="fas fa-arrow-right"></i></span></button>
+                        </div>
+                    </div>
+                    <hr style="margin: 30px 50px 30px 0px">
+                    <div class="contact-about-item">
+                        <div class="contact-img contact-img2"></div>
+                        <div class="contact-text">
+                            <h3 class="about-text" style="color: #22AF8D;">Lorem, ipsum dolor.</h3>
+                            <p class="about-text" style="color: #22AF8D;">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            <p class="about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quibusdam culpa perspiciatis fuga quos natus quisquam dolore et praesentium voluptate?
+                            </p>
+                            <button class="more-button" style="margin-top: 22px;">More <span><i class="fas fa-arrow-right"></i></span></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form>
+                        <div class="contact-form-header">
+                            <div class="service-icon">
+                                <i style = "color: white;" class="fas fa-pencil-alt"></i>
+                            </div>
+                            <div class="contact-form-header-text">
+                                <h2 class="green-text">Mesaj Yaz.</h2>
+                                <p class="green-text">Bana bir şeyler demek ister misin?</p>
+                            </div>
+                        </div>
+                        <input type="name" placeholder="Your Name..">
+                        <input type="email" placeholder="Your E-Mail..">
+                        <textarea placeholder="Your Message.." rows = "6" cols ="21"></textarea>
+                        <button class="more-button">Send <span><i class="fas fa-arrow-right"></i></span></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="work">
+        <div class="work-container">
+            <table class="work-table">
+                <tr>
+                    <th>ALIQUAM TINCID</th>
+                    <th>LOREM IPSUM</th>
+                    <th>SIT AMET</th>
+                    <th>SEDLU PRASE</th>
+                    <th>COMMAD QUIS</th>
+                    <th>VOLUPTAT SIN</th>
+                </tr>
+                <tr>
+                    <td>Nunc dignissum risus</td>
+                    <td>Nunc dignissum risus</td>
+                    <td>Nunc dignissum risus</td>
+                    <td>Nunc dignissum risus</td>
+                    <td>Nunc dignissum risus</td>
+                    <td>Nunc dignissum risus</td>
+                </tr>
+                <tr>
+                    <td><hr></td>
+                    <td><hr></td>
+                    <td><hr></td>
+                    <td><hr></td>
+                    <td><hr></td>
+                    <td><hr></td>
+                </tr>
+                <tr>
+                    <td>Cras ornare</td>
+                    <td>Cras ornare</td>
+                    <td>Cras ornare</td>
+                    <td>Cras ornare</td>
+                    <td>Cras ornare</td>
+                    <td>Cras ornare</td>
+                </tr>
+                <tr>
+                    <td><hr></td>
+                    <td><hr></td>
+                    <td><hr></td>
+                    <td><hr></td>
+                    <td><hr></td>
+                    <td><hr></td>
+                </tr>
+                <tr>
+                    <td>trist Vivamus</td>
+                    <td>trist Vivamus</td>
+                    <td>trist Vivamus</td>
+                    <td>trist Vivamus</td>
+                    <td>trist Vivamus</td>
+                    <td>trist Vivamus</td>
+                </tr>
+                <tr>
+                    <td><hr></td>
+                    <td><hr></td>
+                    <td><hr></td>
+                    <td><hr></td>
+                    <td><hr></td>
+                    <td><hr></td>
+                </tr>
+                <tr>
+                    <td>Vestibul Prase</td>
+                    <td>Vestibul Prase</td>
+                    <td>Vestibul Prase</td>
+                    <td>Vestibul Prase</td>
+                    <td>Vestibul Prase</td>
+                    <td>Vestibul Prase</td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <p>Copyright(c) YASİN TORUN. Designed by: yasintorun.com All right reserved.</p>
+            <p>Hayat paylaşınca güzel.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

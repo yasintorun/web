@@ -1,0 +1,322 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.bg {
+    background: url(https://www.teahub.io/photos/full/290-2906962_colorful-sunset-sky-4k-sunset-sky-background-hd.jpg) no-repeat center center fixed;
+    background-size: cover;
+    width: 100%;
+    overflow-x: hidden;
+    height: 100vh;
+
+}
+.bg-opacity {
+    background-color: rgba(53, 53, 53, 0.877);
+    height: fit-content;
+    width: 100%;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style-type: none;
+}
+header {
+    width: 20%;
+    background-color: rgb(164, 63, 73);
+    height: 100%;
+    margin: 0 10vh;
+    position: fixed;
+}
+.hero {
+    margin: 40px 0px;
+    color: white;
+}
+.hero img {
+    border-radius:100px;
+}
+.hero h1 {
+    padding: 10px;
+}
+
+.nav-list-item {
+    padding:20px 0;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    color: white;
+    font-weight:bolder;
+
+}
+
+.nav-list-item:hover {
+    background-color: white;
+    color: rgb(164, 63, 73);
+    transition-duration: 0.75s;
+}
+.social-list {
+    display: flex;
+    justify-content: center;
+}
+
+.social-list-item{
+    background-color: rgba(37, 37, 37, 0.664);
+    padding: 10px 15px;
+    margin: 40px 0px 40px 5px;
+    color: white;
+}
+.social-list-item:hover {
+    background-color: white;
+    color: rgb(164, 63, 73);
+    cursor:pointer;
+    transition-duration: 0.5s;
+}
+
+footer {
+    margin: 35px;
+    color: white;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+main {
+    width: 60%;
+    margin: 0 auto;
+    margin-right: 15vh;
+    padding: 50px 0;
+    color: white;
+}
+
+.about-item {
+    margin: 60px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about-item-img-1 {
+    background-image: url(https://templatemo.com/templates/templatemo_531_reflux/assets/images/left-image.jpg);
+}
+.about-item-img-2 {
+    background-image: url(https://templatemo.com/templates/templatemo_531_reflux/assets/images/right-image.jpg);
+}
+.about-item-img {
+    height: 40vh;
+    width: 48%;
+    border-radius: 10px;
+}
+.about-item-text {
+    width: 48%;
+    text-align: left;
+}
+
+.about-item-text h2 {
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: white;
+    color: rgb(164, 63, 73);
+    padding: 15px 20px;
+    border: 0;
+    margin: 50px 0;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 1.2px;
+}
+
+.line {
+    margin: 50px 0; 
+    border:1px solid rgba(128, 128, 128, 0.2);
+    background-color: rgba(128, 128, 128, 0.2);
+}
+
+.btn:hover {
+    background-color: rgb(164, 63, 73);
+    color: white;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+
+.big-text {
+    font-size: 28px;
+}
+
+.skill-body {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.skill-body-item:hover {
+    background-color: white;
+    color: black;
+    transition-duration: 0.5s;
+}
+.skill-body-item:hover .skill-icon {
+    color:rgb(164, 63, 73);
+    border:3px solid rgb(164, 63, 73);
+    transition-duration: 0.5s;
+}
+
+.skill-body-item {
+    width: 38%;
+    background-color: rgba(128, 128, 128, 0.2);
+    height: 30vh;
+    text-align: left;
+    padding: 50px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.skill-icon {
+    font-size: 32px;
+    border: 3px solid white;
+    border-radius: 100px;
+    padding: 10px 20px;
+}
+
+.mt30 {
+    margin: 50px 0px 20px 0px;
+}
+
+
+.work-list {
+    display: flex;
+    justify-content: center;
+}
+
+.work-form-text {
+    margin-right: 10px;
+    font-weight: 500;
+}
+
+.work-form-text:hover {
+    cursor: pointer;
+}
+.work-form-text:visited {
+    color:rgb(164, 63, 73);
+    border-bottom: 2px solid rgb(164, 63, 73);
+    transition-duration: 0.5s;
+}
+
+.work-galery-item {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.work-img {
+    position: relative;
+    width: 48%;
+}
+.work-img img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+figcaption {
+    position: absolute;
+    left:0;
+    top:5%;
+    width: 100%;
+    height: 70%;
+    transform-origin: 50% 50%;
+    perspective: 50em;
+}
+
+.figcaption-bg {
+    color: black;
+    background-color: white;
+    opacity: 0;
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    transform: rotateX(-90deg);
+    z-index: 1;
+    transition-delay: 0;
+    transition-duration: 0.5s;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+}
+
+figcaption:hover .figcaption-bg {
+    transform: rotateX(0);
+    opacity: 0.9;
+}
+
+.figcaption-text {
+    z-index: 2;
+    text-align: center;
+    color: #2f2f2f;
+    position: absolute;
+    top:55%;
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    left: 25%;
+    opacity: 0;
+    transition-duration: 0.4s;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+}
+
+figcaption:hover .figcaption-text {
+    top:25%;
+    opacity: 1;
+}
+
+
+.figcaption-text-search-icon {
+    background-color: rgb(164, 63, 73);
+    color: white;
+    border-radius: 5px;
+    padding: 15px 10px 10px 10px;
+
+}
+
+.italic {
+    font-style: italic;
+}
+
+.form-body, .contact-form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#name, #email {
+    width: 45%;
+}
+#subject, .message {
+    width: 100%;
+}
+.message {
+    resize: vertical;
+    max-height: 200px;
+    min-height: 50px;
+    height: 100px;
+
+}
+
+.contact-form input, .message {
+    font-size: 18px;
+    background-color: rgba(128, 128, 128, 0.2);
+    border: 1px solid white;
+    margin: 15px 0px;
+    padding: 8px;
+}
+::placeholder {
+    color: rgba(255, 255, 255, 0.2);
+    font-weight:100;
+    font-size: 16px;
+}
