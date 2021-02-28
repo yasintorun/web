@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Filtreleme { JavaScript }</title>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        header, .filtre {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+        main {
+            width: 90%;
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 auto;
+        }
+        .photo {
+            display: block;
+            width: 20%;
+            height: 200px;
+            text-align: center;
+            box-shadow: 0px 0px 3px 0px rgb(97, 97, 97);
+            margin: 20px 30px;
+            border-radius: 10px;
+            color: white;
+            font-weight: bold;
+            
+        }
+        .insan {
+            background-color: #e7a529;
+        }
+        .hayvan {
+            background-color: #26d8a3;
+        }
+        .bitki {
+            background-color: #8226d8;
+        }
+
+    </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+</head>
+<body>
+    <header>
+        <div class="filtre">
+            <label>Bitki</label>
+            <input type="checkbox" id="_bitki" checked onchange="OnChange('bitki')">
+        </div>
+        <div class="filtre">
+            <label>Hayvan</label>
+            <input type="checkbox" id="_hayvan" checked onchange="OnChange('hayvan')" >
+        </div>
+        <div class="filtre">
+            <label>İnsan</label>
+            <input type="checkbox" id="_insan" checked onchange="OnChange('insan')">
+        </div>
+    </header>
+
+
+    <main>
+        <div class="photo bitki">
+            <p>BİTKİ</p>
+        </div>
+
+        <div class="photo insan">
+            <p>İNSAN</p>
+        </div>
+        <div class="photo hayvan">
+            <p>HAYVAN</p>
+        </div>
+        <div class="photo insan">
+            <p>İNSAN</p>
+        </div>
+        <div class="photo hayvan">
+            <p>HAYVAN</p>
+        </div>
+        <div class="photo hayvan">
+            <p>HAYVAN</p>
+        </div>
+        <div class="photo bitki">
+            <p>BİTKİ</p>
+        </div>
+
+        <div class="photo hayvan">
+            <p>HAYVAN</p>
+        </div>
+        <div class="photo insan">
+            <p>İNSAN</p>
+        </div>
+        <div class="photo hayvan">
+            <p>HAYVAN</p>
+        </div>
+        <div class="photo bitki">
+            <p>BİTKİ</p>
+        </div>
+        <div class="photo insan">
+            <p>İNSAN</p>
+        </div>
+        <div class="photo hayvan">
+            <p>HAYVAN</p>
+        </div>
+
+        <div class="photo bitki">
+            <p>BİTKİ</p>
+        </div>
+        <div class="photo insan">
+            <p>İNSAN</p>
+        </div>
+        <div class="photo hayvan">
+            <p>HAYVAN</p>
+        </div>
+        <div class="photo bitki">
+            <p>BİTKİ</p>
+        </div>
+        <div class="photo hayvan">
+            <p>HAYVAN</p>
+        </div>
+    </main>
+    <script>
+        // jquery ile kolayca filtreleme
+        $(document).ready(function(){
+            $("#_bitki").click(function() {
+                $(".bitki").toggle(200);
+            });
+            $("#_hayvan").click(function() {
+                $(".hayvan").toggle(200);
+            });
+            $("#_insan").click(function() {
+                $(".insan").toggle(200);
+            });
+        });
+
+       // Kendi yazdıgım filtreleme fonksiyonum.
+        /*function OnChange(set) {
+            obj = Object.values(document.getElementsByClassName("bitki"));
+            _this = document.getElementById("_bitki");
+            if(set == "insan") {
+                obj = Object.values(document.getElementsByClassName("insan"));
+                _this = document.getElementById("_insan");
+            }else if(set == "hayvan") {
+                obj = Object.values(document.getElementsByClassName("hayvan"));
+                _this = document.getElementById("_hayvan");
+            }
+            obj.forEach(element => {
+                    element.style.display = _this.checked ? "block" : "none"; 
+            });
+        }*/
+    </script>
+
+</body>
+
+</html>
