@@ -1,0 +1,209 @@
+:root {
+    --theme-color: #0085A1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color:inherit;
+}
+li {
+    list-style: none;
+}
+
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+/*****/
+
+.h8 {
+    height: 8vh;
+}
+
+.main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.d-flex {
+    display: flex;
+}
+.justify-center {
+    justify-content: center;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.justify-right {
+    justify-content: right;
+}
+.align-center {
+    align-items: center;
+}
+
+/*****/
+
+.pl20 {
+    padding: 0 20px;
+}
+
+.pl10 {
+    padding: 0 10px;
+}
+
+
+.font-lighter {
+    font-weight: lighter;
+}
+
+
+/*****/
+
+#home {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    width: 100%;
+    text-align: center;
+}
+
+.site-title {
+    font-size: 96px;
+}
+.site-slogan {
+    font-size: 35px;
+    font-weight: lighter;
+}
+
+/***COLOR***/
+
+.c-white {
+    color:white;
+}
+
+.c-black {
+    color:black;
+}
+
+
+
+/*** BLOG **/
+
+.blog {
+   font-size: 120%;
+}
+
+.blog-post {
+    margin: 50px 0;
+}
+
+.blog-post-head:hover {
+    color: var(--theme-color);
+    cursor: pointer;
+}
+
+.blog-post-head a>*, .blog-post-details {
+    padding: 10px 0;
+}
+.quot {
+    padding-bottom: 40px;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    color: #333333b6
+}
+
+hr {
+    border: 0.1px solid rgba(0, 0, 0, 0.1);
+}
+
+
+/***BUTTON**/
+
+.btn {
+    border: 0;
+    margin: 10px 0;
+    padding: 20px 30px;
+}
+.btn:hover {
+    cursor: pointer;
+}
+
+.bg-theme {
+    background-color: var(--theme-color);
+    color: white;
+}
+.bg-theme:hover {
+    background-color: #00596b;
+}
+
+.txt-right {
+    text-align: right;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.icon {
+    font-size: 30px;
+    margin:10px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: rgb(17, 17, 17);
+    color: white;
+    width: 50px;
+}
+
+.icon:hover {
+    background-color: var(--theme-color);
+}
+
+.footer-text {
+    margin: 20px;
+}
+
+.paragraf{
+    font-size: 20px;
+    padding: 50px 0;
+}
+input, textarea {
+    display: block;
+    width: 100%;
+    border: 0;
+    margin: 30px 0;
+    padding: 20px 0;
+    font-size: 22px;
+}
+
+textarea {
+    resize: none;
+}   
+
+input:focus, textarea:focus {
+    outline: 0;
+}
