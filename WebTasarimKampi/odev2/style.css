@@ -1,0 +1,28 @@
+
+body  {
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container-large {
+    width: 80%;
+    margin: auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .container-large {
+        width: 95%;
+        margin: auto;
+        overflow: hidden;
+    }
+  }
+
+.bg-gray {
+    background-color: rgb(230, 230, 230);
+}
+
+.font-size-large{
+    font-size: 100px;
+}
+.font-size-md {
+    font-size: 30px;
+}
