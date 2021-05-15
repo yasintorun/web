@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>PoloEx Giyim</title>
+    
+<link rel="stylesheet" href="style.css"> <!--Yazdıgımız css dosyasını içeri aktardık--> 
+
+<!--iconları kullanabilmek için fontawesome cdn kullandık-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</head>
+<body>
+
+    <!--Sayfanın başlıgındaki tüm herşey burada yer alıyor-->
+    <header>
+        <div class="header"> <!--Alt yapı-->
+            <div class="main-header"> <!--Üst kısımdaki arama, logo , butonların yer alacagı kısım-->
+                <div class="d-flex justify-between align-center container-lg"> <!--flex ve space-between yaparak düzenli bir görüntü oluşmasını sağladık-->
+                    <input type="search" class="search-bar" placeholder="Arama Yap"><!--Arama yapma kutucuğu-->
+                    <a href="index.html" class="logo"><h1>PoloEx</h1></a> <!--Logomuzun veya markamızın isminin yer alacağı kısım-->
+                    <div class="header-utilities"> <!--Header daki buton işlemleri yapısı-->
+                        <a href="login.html" class="utility-link"> <!--işlem linkleri-->
+                            <span>Sipariş Takip</span>
+                        </a>
+                        <a href="login.html" class="utility-link login-link">
+                            Giriş Yap <!--Giriş yap linki-->
+                        </a>
+                        <a href="#" class="utility-link">
+                            <span><i class="far fa-heart"></i></span> <!--FAvoriler iconu-->
+                        </a>
+                        <a href="#" class="utility-link">
+                            <span><i class="fas fa-shopping-cart"></i></span> <!--Sepetim ikonu-->
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--Kategorilerin yer alacağı kısım-->
+            <div class="category-header">
+                <!--Flex yapı sayesinde düzenli bir görüntü oluşturuyoruz-->
+                <div class="d-flex justify-center align-center container-lg">
+                    <!--Nav-bar list-->
+                    <ul class="d-flex justify-center align-center category-list">
+                        <a href="#"><li>Yeni Sezon</li></a> <!--Her bir kategori list elemanı için link-->
+                        <a href="kadin.html"><li>Kadın</li></a>
+                        <a href="erkek.html"><li>Erkek</li></a>
+                        <a href="#"><li>Ayakkabı & Çanta</li></a>
+                        <a href="#"><li>Çocuk</li></a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--SAyfa içeriginin yer alacağı kısım-->
+    <main>
+        <!--düzen için-->
+        <div class="main">
+
+            <!--Üst taraftaki tanıtım, kampanya kutularının bulundugu yer.
+            flex yapı sayesinde tek satırda düzenli bir görüntü oluşturduk-->
+            <div class="d-flex justify-evenly campaigns">
+                <!--Her biri kampanya kutusunun ana yapısı-->
+                <div class="image-card">
+                    <!--Kutuya tıklanabilirlik için fotografı link şeklinde yapıyoruz-->
+                    <a href="">
+                        <!--Kampanyanın fotografı-->
+                        <img class="images" src="images/kampanyalar/kampanya1.jpg">
+                    </a>
+                </div>
+                <!--Alttakiler Üstteki yapı ile aynı-->
+                <div class="image-card">
+                    <a href="">
+                        <img class="images" src="images/kampanyalar/kampanya2.jpg">
+                    </a>
+                </div>
+                <div class="image-card">
+                    <a href="">
+                        <img class="images" src="images/kampanyalar/kampanya3.jpg">
+                    </a>
+                </div>
+                <div class="image-card">
+                    <a href="">
+                        <img class="images" src="images/kampanyalar/kampanya4.jpg">
+                    </a>
+                </div>
+                <div class="image-card">
+                    <a href="">
+                        <img class="images" src="images/kampanyalar/kampanya5.jpg">
+                    </a>
+                </div>
+            </div>
+            
+            <!--Büyük kampanyalar için(büyük fotografların yer aldıgı kısım)
+            container-lg sayfanın %80nini kapsar ve ortalar-->
+            <div class="container-lg">
+                <!--Full auto sayfanın %100ünü kapsar-->
+                <div class="full-auto campaigns">
+                    <!--Kampanya için yapı.-->
+                    <div>
+                        <!--Tıklanabilirlik için Link şeklinde yapıyoruz-->
+                        <a href="kadin.html">
+                            <img class="images" src = "images/kampanyalar/kampanya6.jpg">
+                        </a>
+                    </div>
+                </div>
+                <!--Alttakiler yukarıdaki yapı ile aynı-->
+                <div class="full-auto campaigns">
+                    <div>
+                        <a href="kadin.html">
+                            <img class="images" src = "images/kampanyalar/kampanya7.jpg">
+                        </a>
+                    </div>
+                </div>
+                <div class="full-auto campaigns">
+                    <div>
+                        <a href="kadin.html">
+                            <img class="images" src = "images/kampanyalar/kampanya8.jpg">
+                        </a>
+                    </div>
+                </div>
+                <div class="full-auto campaigns">
+                    <div>
+                        <a href="kadin.html">
+                            <img class="images" src = "images/kampanyalar/kampanya9.jpg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!--Blog yazıların yer alacagı kısım-->
+            <div class="blog">
+                <!--blog fotografı-->
+                <div class="d-flex justify-center">
+                    <div>
+                        <img class="images" src="images/blog.png">
+                    </div>
+                </div>
+                <!--Bloglar flex yapıda ve sayede düzenli bir görütü oluşmakta-->
+                <div class="d-flex justify-evenly container">
+                    <!--Her bir blog kartı için oluşturulan yapı-->
+                    <div>
+                        <!--image-card sayeside fotografı 330px boyutuna ayarlıyoruz-->
+                        <div class="image-card text-center">
+                            <img class="images" src="images/blog1.jpg"> <!--blog için fotograf-->
+                            <a href="#">OĞLAK BURCUNA NE HEDİYE ALINIR?</a> <!--blog başlıgı-->
+                        </div>
+                    </div>
+                    <!--alttaki 2 yapı yukarıdaki ile aynı-->
+                    <div>
+                        <div class="image-card text-center">
+                            <img class="images" src="images/blog2.jpg">
+                            <a href="#">EVDE YILBAŞI İÇİN KOMBİN ÖNERİLERİ</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="image-card text-center">
+                            <img class="images" src="images/blog3.jpg">
+                            <a href="#">YILBAŞI HEDİYENİ BU SENE DE USPA'DAN SEÇ!</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </main>
+    
+    <!--Sitenin alt başlığı-->
+    <footer>
+        <!--Tüm alt başlık içerigini genişligin %60ına ayarlıyoruz ve ortalıyoruz-->
+        <div class="container">
+            <!--Alt başlıktaki 4 lü kısım için yapılan liste
+            Elemanlar yanyana gelebilmesi ve düzenli olması için flex ve space betweeb olarak ayarlandı
+            -->
+            <ul class="d-flex justify-between">
+                <!--Liste elemanları -->
+                <li>
+                    <!--her liste deki elemanlarda kendi için liste barındırıyor
+                    bu yüzden ana bir div yapısı içerisinde tanımlıyoruz.-->
+                    <div class="footer-list">
+                        <!--Footerdaki alt linklerin yer aldıgı liste-->
+                        <ul class="footer-sub-list">
+                            <!--Alt listenin başlığı-->
+                            <h4>İNTERNET MAĞAZASI</h4>
+                            <!--Alt liste için linklerin bulunduğu kısım-->
+                            <li><a href="#">Sonbahar & Kış</a></li>
+                            <li><a href="kadin.html">Kadın</a></li>
+                            <li><a href="erkek.html">Erkek</a></li>
+                            <li><a href="#">Kız Çocuk</a></li>
+                            <li><a href="#">Erkek Çocuk</a></li>
+                            <li><a href="#">Bebek</a></li>
+                            <li><a href="index.html">Kampanyalar</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <!--Yukarıdaki yapı ile aynı-->
+                <li>
+                    <div class="footer-list">
+                        <ul class="footer-sub-list">
+                            <h4>KURUMSAL</h4>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Hakkımızda</a></li>
+                            <li><a href="#">Mağazalar</a></li>
+                            <li><a href="#">İletişim</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="footer-list">
+                        <ul class="footer-sub-list">
+                            <h4>MÜŞTERİ HİZMETLERİ</h4>
+                            <li><a href="#">Sipariş Takip</a></li>
+                            <li><a href="#">Gizlilik & Çerez Politikaları</a></li>
+                            <li><a href="#">Kişisel Verilerin korunması</a></li>
+                            <li><a href="beden-olcum-tablosu.html">Beden Ölçüm Tablosu</a></li>
+                            <li><a href="#">İşlem Rehberi</a></li>
+                            <li><a href="#">Sıkça Sorulan Sorular</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <!--dış listedeki son eleman-->
+                <li class="store">
+                    <div class="footer-list">
+                        <!--Bu elemanda bazı dış linker bulunmakta.-->
+                        <div class="d-flex justify-between">
+                            <!--Google play linki-->
+                            <a href="#">
+                                <img src="images/google.svg">
+                            </a>
+                            <!--App store linki-->
+                            <a href="#">
+                                <img src="images/apple.svg">
+                            </a> 
+                        </div>
+                        <!--Bu kısımda sosyal medya linkleri bulunuyor. Linkler icon şeklinde-->
+                        <div class="d-flex justify-evenly utility-link">
+                            
+                            <a href="#" class="social-media-link">
+                                <i class="fab fa-facebook"></i> <!--Facebook-->
+                            </a>
+                            <a href="#" class="social-media-link">
+                                <i class="fab fa-twitter"></i> <!--Twitter-->
+                            </a>
+                            <a href="#" class="social-media-link">
+                                <i class="fab fa-linkedin"></i> <!--LinkedIn-->
+                            </a>
+                            <a href="#" class="social-media-link"> 
+                                <i class="fab fa-youtube"></i> <!--Youtube-->
+                            </a>
+                        </div>
+                        <!--Son elemandaki alt başlık-->
+                        <div class="text-center container-lg">
+                            <h4>PoloEx Türkiyenin Giyim Markası</h4> <!--başlık-->
+                            <p style="font-size: 11px"> <!--Yazı-->
+                                "PoloEx Giyim San. Ve Tic. A.Ş." tarafından ürün, hizmet ve kampanyalarla ilgili reklam,
+                                 pazarlama ve bilgi amaçlı E-POSTA gönderilmesine izin veriyorum. 
+                                 Kişisel verilerinizle ilgili "Aydınlatma Metni" için <a href="#" style="color:white;">tıklayınız.</a>
+                            </p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <!--Sayfanın en alt kısımda yer alan copyright yazısı-->
+            <p class="copyright text-center">
+                &copy;2021 PoloEx. Tüm Hakları Saklıdır.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>

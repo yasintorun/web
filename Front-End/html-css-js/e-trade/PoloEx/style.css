@@ -1,0 +1,302 @@
+* {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    
+    color: #002b70;
+}
+/*Linklerin üstüne geldiginde*/
+a:hover {
+    color: rgb(190, 0, 0);
+}
+li {
+    list-style: none;
+    padding: 5px;
+}
+html {
+    font-family: 'Open Sans',-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*Tüm genişligi kapla ve ortala*/
+.full-auto {
+    width: 100%;
+    margin: auto;
+}
+
+/*Sayfanın genişliginin %60nı kaplamasını istiyoruz. ve ortalıyoruz*/
+.container {
+    width: 60%;
+    margin: auto;
+}
+/*Sayfanın genişliginin %80nini kaplasın ve ortalasın*/
+.container-lg {
+    width: 80%;
+    margin: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/*arama, logo, butonların bulundugu Ana kısım*/
+.top-header {
+    background-color: white;
+}
+/*Kategorilerin bulundugu header nav-bar*/
+.category-header{
+    background-color: #1a2a4a;
+}
+.category-header * {
+    color: white;
+}
+
+/*Genel flex class'ları*/
+.d-flex {
+    display: flex;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.justify-center {
+    justify-content: center; 
+}
+.justify-between {
+    justify-content: space-between;
+}
+.justify-evenly {
+    justify-content: space-evenly;
+}
+.align-center {
+    align-items: center;
+}
+
+
+/*Header'daki arama yapma yeri için css özellikleri*/
+.search-bar {
+    padding: 5px 10px;
+    font-weight: bold;
+    border: 2px solid rgb(182, 182, 182);
+    border-radius: 5px;
+}
+
+/*header'daki üst kontrol butonları*/
+.utility-link {
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+
+
+/*Kategori linklerin arasına boşluk bırakıyoruz*/
+.category-list > a{
+    padding: 0px 30px;
+    font-weight: bold;
+}
+
+/*Kampanya kısmının alttan ve üstten 20px boşluk bırakıyoruz*/
+.campaigns{
+    margin: 20px 0px;
+}
+
+/*image-card şeklinde olanların genişligini belirtiyoruz*/
+.image-card{
+    width: 330px;    
+}
+
+
+/*images classına sahip fotograflar genişligin hepsini kullansın istiyoruz*/
+.images {
+    width: 100%;
+}
+
+/*Ana sayfadaki blog kısmı için*/
+.blog {
+    background-color: rgba(238, 229, 229, 0.459);
+}
+
+/*Footer için görünüm düzenlemesi*/
+footer {
+    margin-top: 30px;
+    background-color: #1a2a4a;
+    color: white;
+}
+
+/*Footer listesindeki yazıları küçült*/
+.footer-list {
+    font-size:small;
+}
+/*Footerdaki alt liste içiersindek tüm a ların rengini soluk beyaz yap*/
+.footer-sub-list > li  a{
+    color: #abb2bf;
+}
+
+/*Store resimleri ve linkler için görünüm düzenlemesi*/
+.store {
+    flex: 1 0 25%;
+    max-width: 30%;
+    margin-top: 20px;
+}
+
+/*Sosyal medya linkleri için görünüm düzenlemesi*/
+.social-media-link {
+    color: rgba(238, 229, 229, 0.459);
+    font-size: 24pt;
+    margin: 10px 0px;
+}
+/*copyright yazısının boyutunu 12px olarak ayarla*/
+.copyright {
+    font-size: 12px;
+}
+
+/************/
+
+/*Buttonlar için genel özellikler*/
+.btn {
+    margin: 0;
+    border: 0;
+    padding: 10px 15px;
+}
+.btn:hover{
+    cursor:pointer;
+}
+/*Sepete ekle butonu için yazıldı*/
+.btn-add{
+    display: block;
+    width: 40%;
+    margin:10px auto;
+    border: 1px solid rgb(71, 180, 71);
+    border-radius: 20px;
+    background-color: rgb(71, 180, 71);
+    color:white;
+}
+/*Butonun üzerine geldiginde renk ve animasyon degişikligi yap*/
+.btn-add:hover {
+
+    color:rgb(71, 180, 71);
+    background-color: white;
+    transition-duration: 0.2s;
+}
+/*Ürün kartı özellikleri bir satırda en fazla 3 ürün bulunsun*/
+.product-card {
+    margin: 20px;
+    flex: 0 0 25%;
+    max-width: 33%;
+}
+
+/*ürünün fiyatının rengini kırmızı ve bold yapıyoruz*/
+.product-detail span {
+    color: rgb(190, 0, 0);
+    font-weight: bold;
+}
+
+/*label ve input ları block olsun ve bulunudgu kısmı doldursun*/
+label, input {
+    display: block;
+    padding: 5px 10px;
+}
+
+/*login kısmındaki inputlar için göründü düzenlemeleri*/
+form > input {
+    border: 2px solid rgb(182, 182, 182);
+    border-radius: 5px;
+    font-size: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+/*login.html için panel özellikleri*/
+.panel {
+    padding: 50px;
+    box-shadow: 0 0 5px 0 rgb(0 0 0 / 20%);
+    width: 40%;
+    margin: 20px 0px;
+}
+/*yazı rengini kırmızı yap*/
+.red-text{
+    color: rgb(190, 0, 0);
+}
+/*login.html de submit butonlar için*/
+.btn-submit {
+    background-color: rgb(190, 0, 0);
+    border:1px solid rgb(190, 0, 0);
+    border-radius: 200px;
+    margin: 20px 0px;
+    color: white;
+    font-weight: bold;
+}
+/*butonların stüne geldiginde arkaplan rengini yok et. ve yazı rengini kırmızı yap*/
+.btn-submit:hover {
+    background-color: transparent;
+    color:rgb(190, 0, 0);
+    transition-duration: 0.4s;
+
+}
+/*FAcebook ile giriş için uyumlu renk özellikleri*/
+.btn-facebook {
+    background-color: rgb(0, 76, 190);
+    border:1px solid rgb(0, 76, 190);
+}
+/*üstüne geldiginde*/
+.btn-facebook:hover {
+    color:rgb(0, 76, 190);
+}
+/*şifremi unuttum  linkinin altını çiz*/
+.forgot-password {
+    text-decoration: 1px underline black;
+}
+
+/*footerdaki liste linkerin üstüne glediginde yazı rengini degiştir*/
+li:hover > a {
+    color:rgba(238, 229, 229, 0.459);
+}
+
+/*headerdaki giriş yap butonu için görsel düzenleme*/
+.login-link {
+    text-align: center;
+    padding: 5px 10px;
+    border: 2px solid #1a2a4a;
+    background-color: transparent;
+    border-radius: 100px;
+    color: #1a2a4a;
+}
+/*Butonun zerine geldiginde outline animasyon*/
+.login-link:hover {
+    background-color: #1a2a4a;
+    color:white;
+}
+
+/*Tablolardaki butonların görsel düzenlemeleri*/
+.btn-tablo{
+    margin: 0px 20px;
+    padding: 10px 20px;
+}
+
+
+/***************/
+/*Tabloları kapsayan yapı*/
+.table-container {
+    width: 45%;
+    margin: auto;
+}
+/*Tablolar için genel özellik*/
+table {
+    margin: 50px auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+/*Tablo başlıklarının arkaplan gibi özelliklerini degiştiriyoruz*/
+thead{
+    margin: 0;
+    padding: 0;
+    display: table-header-group;
+    background-color: rgb(223, 223, 223);
+}
+/*tablolardaki satır ve başlıklar için border ve gerekli iç boşluk veriyoruz*/
+th, td {
+    border: 1px solid rgb(182, 182, 182);
+    padding: 10px 100px;
+}

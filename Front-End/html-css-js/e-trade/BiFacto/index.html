@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BiFacto ile Kadın, Erkek, Çocuk, Bebek Giyimleri</title>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!--icon kullanabilmek için gerekli-->
+    <link href="main.css" rel="stylesheet" type="text/css"> <!--Main.css dosyasını içeri aktar-->
+</head>
+<body>
+    
+    <!--Üst başlıktaki tüm herşey-->
+    <!--Bu Header kısmı tüm alt sayfalarda da kullanılmıştır. Ve aynı yapıdadır-->
+    <header>
+        <div id="main-header"> <!--Div düzeni-->
+
+            <!--Header kısmı 2 alt alta divden oluşuyor-->
+            <!--header-content: flex sayesinde düzenli bir görüntüye sahip-->
+            <!--Bu div logo, arama, kullanıcı kontrollerini içeriyor-->
+            
+            <div class="header-content">
+                <div class="header-logo"> <!--logonun bulundugu kısım-->
+                    <a href="index.html">BiFacto</a> <!--logoya tıklanınca index.html sayfasına git-->
+                </div>
+                <div class="header-search-bar"> <!--Arama çubugu kısmı-->
+                    <input type="search" placeholder="Ürün Ara"> <!--search bar-->
+                </div>
+                <div class="header-controls"> <!--Kullanıcı kontrollerinin bulundugu kısım-->
+                    <a href="login.html" class="control-btn"> <!--Giriş yap. -> login sayfasına yönlendir.-->
+                        <span><i class="far fa-user"></i>Giriş Yap</span>
+                    </a>
+                    <a href="#" class="control-btn"> <!--Favorilerim kısmı-->
+                        <span><i class="far fa-heart"></i>Favorilerim</span>
+                    </a>
+                    <a href="#" class="control-btn"><!--Sepetim kısmı-->
+                        <span><i class="fas fa-shopping-cart"></i>Sepetim</span>
+                    </a>
+                </div>
+            </div>
+
+            <!--Bu div ise Alt taraftaki kategori kısmını içeriyor-->
+            <div class="header-content">
+                <div class="header-category"> <!--Bu div sayesinde düzeni koruyoruz-->
+                    <ul class="header-category-list"> <!--Kategori listesi-->
+                        <li><a href="kadin-giyim.html" class="header-category-list-item">Kadın</a></li>
+                        <li><a href="erkek-giyim.html" class="header-category-list-item">Erkek</a></li>
+                        <li><a href="cocuk-giyim.html" class="header-category-list-item">Çocuk</a></li>
+                        <li><a href="bebek-giyim.html" class="header-category-list-item">Bebek</a></li>
+                        <li><a href="beden-tablosu.html" class="header-category-list-item">Beden Tablosu</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--Main etiketi sayfanın ana içerik kısmıdır. bu main tüm alt sayfalarda da kullanılmıştır. Fakat içeriği farklıdır-->
+    <main>
+        <!--Üst kısmında tanıtım, büyük indirim gibi reklam yapacagı büyük bir resim dosyasını içerir.-->
+        <div class="showcase">
+            <img src="images/main-showcase.jpg"> <!--Tanıtım fotografı-->
+        </div>
+
+        <!--Sayfa içeriği.-->
+        <!--Bu divde flex kullanılmıştır. Bu sayede alt elemanlar düzenli bir şekilde sayfada yer alıyor-->
+        <div class="main-content">
+            <!--Main-item elemanların ana şablonudur.-->
+            <div class="main-item">
+                <a href="kadin-giyim.html"> <!--Elemanlar resim şeklinde ekleniyor. Tıklanınca ilgili kategoriye yönlendiriliyor.-->
+                    <img src="images/img1.jpg" class="main-item-img"> <!--main-item-img class'ı her bir fotografı düenli ekleyebilmek için yazılmıştır-->
+                </a>
+            </div>
+
+            <!--Alt elemanlar üsttekiyle aynı yapıya sahiptir.-->
+            <div class="main-item">
+                <a href="kadin-giyim.html">
+                    <img src="images/img2.jpg" class="main-item-img">
+                </a>
+            </div>
+            <div class="main-item">
+                <a href="cocuk-giyim.html">
+                    <img src="images/img3.jpg" class="main-item-img">
+                </a>
+            </div>
+            <div class="main-item">
+                <a href="erkek-giyim.html">
+                    <img src="images/img4.jpg" class="main-item-img">
+                </a>
+            </div>
+            <div class="main-item">
+                <a href="cocuk-giyim.html">
+                    <img src="images/main_cocuk1.jpg" class="main-item-img">
+                </a>
+            </div>
+            <div class="main-item">
+                <a href="kadin-giyim.html">
+                    <img src="images/main_kadin1.jpg" class="main-item-img">
+                </a>
+            </div>
+            <div class="main-item">
+                <a href="erkek-giyim.html">
+                    <img src="images/main_erkek1.jpg" class="main-item-img">
+                </a>
+            </div>
+            <div class="main-item">
+                <a href="kadin-giyim.html">
+                    <img src="images/main_kadin2.jpg" class="main-item-img">
+                </a>
+            </div>
+            <div class="main-item">
+                <a href="cocuk-giyim.html">
+                    <img src="images/main_cocuk2.jpg" class="main-item-img">
+                </a>
+            </div>
+            <div class="main-item">
+                <a href="kadin-giyim.html">
+                    <img src="images/main_kadin3.jpg" class="main-item-img">
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!--Alt bilgi kısmı-->
+    <!--Bu footer kısmı tüm alt sayfalarda da vardır. ve aynı yapıdadır.-->
+    <footer>
+        <!--Ana div. Bu div tüm elemanları çerçeveler.-->
+        <div class="footer-content">
+            <!--Footer yerindeki üst kısım. Bu kısımda Markanın alt başlıkları, sosyal medya, yardım gibi yönlendirmeler bulunuyor-->
+            <!--info: flex yapıdadır. Bu sayede Alt elemanlar yanyana gelebilmiştir.-->
+            <div class="info">
+                <!--info-item: her alt elemanın ana yapısıdır. Bu sayede tüm alt elemanlar aynı yapıdadır.-->
+                <!--Bu divde markanın alt başlık yönlendirmeleri bulunuyor-->
+                <div class="info-item">
+                    <h3>BİFACTO</h3><!--Alt elemanın başlığı-->
+                    <ul class="footer-list"> <!--Yönlendirmeleri list şeklinde tutuyoruz.-->
+                        <li class="footer-list-item"><a href="#">Kurumsal</a></li>
+                        <li class="footer-list-item"><a href="#">Hakkımızda</a></li>
+                        <li class="footer-list-item"><a href="#">İnsan Kaynakları</a></li>
+                        <li class="footer-list-item"><a href="#">Kurumsal Satış</a></li>
+                        <li class="footer-list-item"><a href="#">BiFacto Teknoloji</a></li>
+                        <li class="footer-list-item"><a href="#">Sitemap</a></li>
+                    </ul>
+                </div>
+                <!-- Alt taraftaki tüm alt elemanlar, Yukarıdaki yapıyla 1-1 aynıdır.-->
+                <div class="info-item">
+                    <h3>YARDIM</h3>
+                    <ul class="footer-list">
+                        <li class="footer-list-item"><a href="#">Sıkça Sorulan Sorular</a></li>
+                        <li class="footer-list-item"><a href="#">İşlem Rehberi</a></li>
+                        <li class="footer-list-item"><a href="#">Kolay iade ve değişim işlemleri</a></li>
+                        <li class="footer-list-item"><a href="#">Kampanyalar</a></li>
+                        <li class="footer-list-item"><a href="#">Gizlilik ve kişisel verilerin korunması kanunu</a></li>
+                    </ul>
+                </div>
+                <div class="info-item">
+                    <h3>BİZE ULAŞIN</h3>
+                    <ul class="footer-list">
+                        <li class="footer-list-item"><a href="#">Mağazalarımız</a></li>
+                        <li class="footer-list-item"><a href="#">İletişim formu</a></li>
+                    </ul>
+                </div>
+                <div class="info-item">
+                    <h3>SOSYAL MEDYA</h3>
+                    <ul class="footer-list">
+                        <li class="footer-list-item"><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                        <li class="footer-list-item"><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                        <li class="footer-list-item"><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+                        <li class="footer-list-item"><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                        <li class="footer-list-item"><a href="#"><i class="fab fa-youtube-square"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--info class'ı sayesinde ana footer kısmına istedigimiz gibi alt alta yapılar oluşturabiliyoruz. tüm yapılar aynı oldugu için düzen bozulmuyor.-->
+            <!--Bu div ve alt elemanlar yukarıdaki yapının 1-1 aynısıdır.-->
+            <div class="info">
+                <div class="info-item">
+                    <h3>KADIN</h3>
+                    <ul class="footer-list">
+                        <li class="footer-list-item"><a href="kadin-giyim.html">Pantolon</a></li>
+                        <li class="footer-list-item"><a href="kadin-giyim.html">Elbise</a></li>
+                        <li class="footer-list-item"><a href="kadin-giyim.html">Etek</a></li>
+                        <li class="footer-list-item"><a href="kadin-giyim.html">İç Giyim</a></li>
+                        <li class="footer-list-item"><a href="kadin-giyim.html">Jeans</a></li>
+                    </ul>
+                </div>
+                <div class="info-item">
+                    <h3>ERKEK</h3>
+                    <ul class="footer-list">
+                        <li class="footer-list-item"><a href="erkek-giyim.html">Pantolon</a></li>
+                        <li class="footer-list-item"><a href="erkek-giyim.html">T-Shirt</a></li>
+                        <li class="footer-list-item"><a href="erkek-giyim.html">Jeans</a></li>
+                        <li class="footer-list-item"><a href="erkek-giyim.html">Ayakkabı</a></li>
+                        <li class="footer-list-item"><a href="erkek-giyim.html">İç Giyim</a></li>
+                        <li class="footer-list-item"><a href="erkek-giyim.html">Ceket & Yelek</a></li>
+                    </ul>
+                </div>
+                <div class="info-item">
+                    <h3>ÇOCUK</h3>
+                    <ul class="footer-list">
+                        <li class="footer-list-item"><a href="cocuk-giyim.html">Elbise-Etek</a></li>
+                        <li class="footer-list-item"><a href="cocuk-giyim.html">Ayakkabı</a></li>
+                        <li class="footer-list-item"><a href="cocuk-giyim.html">İç Giyim</a></li>
+                    </ul>
+                </div>
+                <div class="info-item">
+                    <h3>BEBEK</h3>
+                    <ul class="footer-list">
+                        <li class="footer-list-item"><a href="bebek-giyim.html">İç Giyim</a></li>
+                        <li class="footer-list-item"><a href="bebek-giyim.html">Takım-Set</a></li>
+                        <li class="footer-list-item"><a href="bebek-giyim.html">Aksesuar</a></li>
+                        <li class="footer-list-item"><a href="bebek-giyim.html">Eşofman</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--Sayfanın en alttaki copyright yazısıdır footer-text class'ı ile bold yapılmış ve ortalanmıştır-->
+            <p class="footer-text">Copyright &copy;2021. BiFacta Giyim. Tüm hakları saklıdır.</p>
+
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giriş Yap</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href="main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <!--Login panelin ana yapısı. Düzen için önemli-->
+    <div class="container">
+        <h1 class="login-logo">BiFacto</h1> <!--Logonun ismi-->
+        <div class="login-panel"> <!--Ana form yapısı içeriği arkaplan rengi, margin, padding, ve display:flex özellikleri verilmiştir.-->
+            <div class="login-enter"> <!--Genişligi korumak ve degiştirebilmek için yazıldı-->
+                <!--Ana form-->
+                <form action="">
+                    <!--Label ile bilgi isteme stringleri yazılıyor.-->
+                    <!--input ile text girişleri alınıyor.-->
+                    <label>E-Posta Adresiniz</label> 
+                    <input type="text">
+                    
+                    <label>Şifreniz</label>
+                    <input type="password"> <!--Girilen değerler şifreli olarak gözükmesi için type:password olarak ayarlanmıştır-->
+                    
+                    <input type="submit" class="login-btn btn" value="Giriş Yap"> <!--Giriş Yap butonu.-->
+                    <a href="#">Şifremi Unuttum</a> <!--Şifremi unuttum linki-->
+                </form>
+                <!--Bunu div olarak yapmamızın sebebi hr - span - hr şeklinde yapabilmek için.
+                    Bunu yapabilmek için flex kullanıldı. Ve görünüm güzelleştirildi.    
+                -->
+                <div class="login-or">
+                    <hr> <span>Yada</span><hr>
+                </div>
+                <!--login-or class'ı flex yapıdadır. Bu sayede elemanlar yanayan geliyor.-->
+                <div class="login-or">
+                    <button class="login-with-facebook btn"><i class="fab fa-facebook-f"></i>Facebook İle Giriş Yap</button> <!--Facebook giriş yap butonu-->
+                    <button class="login-with-google btn"><i class="fab fa-google"></i>Google İle Giriş Yap</button> <!--Google giriş yap butonu-->
+                </div>
+                <a href="index.html">Anasayfaya Dön</a> <!--Login sayfasından ana sayfaya gitmemizi saglayan link-->
+            </div>
+        </div>
+    </div>
+</body>
+</html>

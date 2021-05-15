@@ -1,0 +1,336 @@
+/*Tüm elemanların margin ve padding özelliklerini 0 yapalım.*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Font ve sayfanın arka plan rengini değiştiriyoruz.*/
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    background-color: rgb(243, 243, 243);
+}
+/*Tüm linklerin underline özelligini kaldırıyoruz*/
+a {
+    text-decoration: none;
+}
+/*linklerin üzerine geldiginde animasyon uygula*/
+a:hover{
+    transition-duration: 0.2s;
+}
+/*Tüm image elemanların özellikleri*/
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*Tüm listlerin stillerini yok ediyoruz*/
+li {
+    list-style: none;
+}
+
+/*HEADER kısmı için css özellikleri*/
+header {
+    background-color: white;
+}
+.header-logo{
+    font-size: 30pt;
+}
+/*Header kısmındaki logonun link özelligini degiştiriyoruz*/
+.header-logo a {
+    font-weight: 500;
+    color: rgb(85, 26, 139);
+}
+
+/*Bu class sayesinde header kısmındaki içerikler yanyana ve düzenli şekilde yerleştiriyoruz.*/
+.header-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*Tüm header elemanların margin özellikleri*/
+.header-content * {
+    margin:5px  20px;
+}
+/*headerdaki contorol butonların özellikleri*/
+.control-btn span {
+    margin: 0px;
+    color: rgb(85, 26, 139);
+}
+.far, .fas {
+    margin: 10px;
+}
+/*Butonların üzerine geldiginde*/
+.control-btn:hover span{
+    color:coral;
+}
+/*search bar kısmı için özellikler*/
+.header-content input {
+    font-size: 14pt;
+    width: 500px;
+    padding: 5px 10px;
+}
+/*Header kategori kısmı css özellikleri*/
+.header-category-list {
+    display: flex;
+}
+
+.header-category-list-item{
+    color: black;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+}
+.header-category-list-item:hover {
+    text-decoration:2px underline chocolate;
+    color: coral;
+}
+
+/*END HEADER*/
+
+
+/*MAIN CONTENT*/
+/*tanıtım resmi için özellikler*/
+.showcase {
+    width: 100%;
+    height: 200px;
+}
+.showcase img {
+    height: 200px;
+    width: 100%;
+}
+
+/*bu class index.html dosyasında kullanılmıştır.
+Bu sayede anasayfadaki içerikler düzenli ve altalta yerleşmiş oldu.*/
+.main-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+/*index.html sayfasındaki tüm alt eşyaların genişlik ve margin değerleri*/
+.main-item {
+    width: 20%;
+    margin: 20px;
+}
+
+/*END MAIN*/
+
+
+/*FOOTER*/
+/*Footerdaki ana div için erilen css özellikleri*/
+.footer-content {
+    background-color: white;
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+/*footer-content div içerindeki tüm alt elemanlar info clasına sahiptir.
+bu elemanlar içerisinde yanyana ve düzenli bir görüntü için verilen özellikler*/
+.info {
+    display: flex;
+    justify-content:space-between;
+    background-color: rgb(243, 243, 243);
+    margin: 20px;
+    padding: 20px;
+    color: black;
+}
+/*info içerisindeki list itemlarının aralarındaki boşlukları düzenliyoruz*/
+.footer-list-item {
+    margin: 8px 0px;
+}
+/*link textlerinin rengini siyah yapıyoruz*/
+.footer-list-item  a {
+    color: black;
+}
+/*Linkin üzerine geldigine altı çizgili olmaısnı sağlıyoruz*/
+.footer-list-item a:hover{
+    text-decoration: 2px underline black;
+}
+/*sosyal medya iconlarının boyutlarını arttırıyoruz*/
+.fab {
+    font-size: 20pt;
+}
+/*Alttaki copyright yazısını küçültüyoruz. ortalıyoruz ve bold yapıyoruz*/
+.footer-text {
+    text-align: center;
+    font-size: small;
+    font-weight: 500;
+}
+
+/*End Footer*/
+
+/***********/
+
+/*bu class sayfanın genişligini ayarlar ve ortalar.*/
+.container {
+    width: 60%;
+    margin: auto;
+}
+
+/*Ürünün ana yaoısı için verilen özellikler.
+flex:25% ve max-width:33% sayesinde bir satırda sadece 3 ürün bulunabilir.
+*/
+.product-item {
+    flex: 1 0 25%;
+    max-width: 33%;
+    margin: 20px;
+}
+
+/*Ürünün bilgileri için verilen özellikler*/
+.product-info {
+    border: 1px solid rgba(128, 128, 128, 0.541);
+    padding: 5px 10px;
+}
+
+/*ürün ismi çin bazı özellikler. Display block sayesinde Yanına eleman gelemz*/
+.product-name {
+    color: rgb(58, 57, 57);
+    display: block;
+    font-size: large;
+    font-weight: 500;
+}
+/*ürün ismi link oldugu için üzerine geldiginde underline ve color özelliklerini degiştiriyoruz.*/
+.product-name:hover {
+    text-decoration: 2px underline chocolate;
+    color:coral;
+}
+
+/*Ürün fiyatı için özellikler*/
+.product-price {
+    color: coral;
+    font-size: 20pt;
+    font-weight: bold;
+}
+/*Tüm hr elemanlar üstten ve alttan 5px boşluk bıraksın*/
+hr {
+    margin: 5px 0px;
+}
+
+/**************/
+/*LOGİN SAYFASI*/
+/*logoyu ortala ve boyutunu arttır*/
+.login-logo {
+    text-align: center;
+    font-size: 40pt;
+}
+
+/*Logo dışındaki tüm elemanlar bu panel içerisindedir.
+Paneli flex ve center yaparak tüm elemanları ortalıyoruz.
+*/
+.login-panel {
+    background-color: white;
+    width: 60%;
+    margin: 30px auto;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
+/*login-panelin içerisnde bulunur. ve elemanların panelin % kaçını kaplamasını istiyorsak buradan ayarlarız.*/
+.login-enter {
+    width: 50%;
+}
+/*Tüm label ve inputları block yapıyoruz ve boyutlarını arttırıyoruz*/
+label, input {
+    display:block;
+    font-size: 14pt;
+    width: 125%;
+}
+/*tüm genişligi kullansın*/
+form {
+    width: 100%;
+}
+/*input kısmı için padding ve margin ayarlamarını yapıyoruz*/
+input {
+    padding: 5px 10px;
+    margin: 10px 0px;
+}
+/*Ana buton özellikleri*/
+.btn {
+    border: 0;
+    padding: 10px;
+    margin-top: 20px;
+}
+/*login buton için yapılan css özellikleri*/
+.login-btn {
+    color:white;
+    background-color: rgb(241, 101, 1);
+}
+/*Butonların üzerine gelince cursor pointer olsun.*/
+.btn:hover {
+    cursor:pointer;
+}
+/*Giriş yap butonu üzerine gelince rengini ayarlıyoruz*/
+.login-btn:hover {
+    background-color: chocolate;
+}
+/*login panelindeki tüm linkler için altını çizioruz ve renkini siyah yapıyoruz*/
+.login-enter a {
+    text-decoration: underline;
+    color: black;
+}
+/*linkin üzerine gelince link'in renklerini degiştiriyoruz*/
+.login-enter a:hover {
+    text-decoration: underline chocolate;
+    color: coral;
+}
+/*Bu kısım ____ yada ____ yazan yer için. Normalde hr block yapıda.
+ Biz bunu flex yaparak yanyana güzel bir görüntü olmasını yaptık*/
+.login-or {
+    margin: 30px 0px;
+    width: 125%;
+    font-size: small;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*hr ler için görüntü ayarları*/
+.login-or hr {
+    border: 1px solid gray;
+    width: 100%;
+    height: 1px;
+}
+/*Birleşik olmasın biraz boşluk olsun*/
+.login-or span {
+    padding: 10px;
+}
+/*facebook ve google butonu için gerekli özellikler*/
+.login-with-facebook {
+    background-color: rgb(75, 75, 155);
+    color: white;
+    font-size: 12pt;
+    max-width: 45%;
+}
+.login-with-google {
+    background-color: rgb(240, 240, 240);
+    color: rgb(0, 0, 0);
+    border: 1px solid gray;
+    font-size: 12pt;
+    max-width: 45%;
+}
+
+/***************/
+/*beden-tablosu.html dosyasındaki tablolar için verilen css özellikleri*/
+
+/*Tablolar için verilen css özellikleri*/
+table  {
+    width: 100%;
+    color: #212529;
+    border-collapse: collapse;
+    font-size: 14pt;
+    margin: 80px 0px;
+}
+/*TAblo başlıgı font boyutunu arttır. ve sola yasla*/
+th {
+    font-size: 16pt;
+    text-align: left;
+}
+/*Tüm tablo değerleri arasında boşluk bırakalım*/
+td {
+    padding: 10px;
+}
+/*Satırları çift olanların rengini degiştirelim*/
+tr:nth-child(even) {
+    background-color: rgba(0,0,0,.05);
+}
